@@ -11,9 +11,9 @@ class ShopTest {
 
     @Test
     @DisplayName("Add Item into Shop")
-    void addItem() {
+    void getItems() {
         Item barang_1 = new Item("Sabun Mandi", 20, 100);
         Shop myShop = new Shop();
-        assertEquals("",myShop.addItem(new Item(barang_1));
+        assertEquals("",myShop.getItems());
     }
 }

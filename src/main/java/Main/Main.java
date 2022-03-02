@@ -40,6 +40,7 @@ public class Main {
         // get all items registered after edit
         System.out.println("Updated Items:");
         myShop.printAllItems();
+        System.out.println(myShop.getItems());
 
         System.exit(0);
 
