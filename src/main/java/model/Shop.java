@@ -15,13 +15,20 @@ public class Shop {
     }
 
     public void printAllItems() {
-        for (Item item : getItems()) {
+        for (Item item : this.items) {
             System.out.println(item.getItemInfo());
         }
     }
 
-    public List<Item> getItems() {
-        return this.items;
+    public String getItems() {
+        StringBuilder returnString = new StringBuilder();
+
+        for (Item item : this.items) {
+            returnString.append(item.getItemInfo());
+            returnString.append("\n");
+        }
+
+        return returnString.toString();
     }
 
     public void getAllItemSold() {
