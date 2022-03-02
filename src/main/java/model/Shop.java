@@ -4,20 +4,24 @@ import java.util.List;
 import java.util.ArrayList;
 //create class Shop using List
 public class Shop {
-    private List<Item> items;
+    private final List<Item> items;
 
     public Shop() {
-        this.items = new ArrayList<Item>();
+        this.items = new ArrayList<>();
     }
 
     public void addItem(Item item) {
         this.items.add(item);
     }
 
-    public void getAllItems() {
-        for (Item item : this.items) {
+    public void printAllItems() {
+        for (Item item : getItems()) {
             System.out.println(item.getItemInfo());
         }
+    }
+
+    public List<Item> getItems() {
+        return this.items;
     }
 
     public void getAllItemSold() {

@@ -18,7 +18,7 @@ public class Main {
         myShop.addItem(barang_2);
 
         // get all items registered before purchase
-        myShop.getAllItems(); 
+        myShop.printAllItems();
 
         //buyItem Sabun Mandi and Sabun Cuci
         buyItem(barang_1, 10);
@@ -28,7 +28,7 @@ public class Main {
         myShop.getAllItemSold();
         
         // get all items registered after purchase
-        myShop.getAllItems();
+        myShop.printAllItems();
 
         // edit item based on item index in Shop
         barang_1.setName("Shampoo Keramas");
@@ -39,7 +39,7 @@ public class Main {
 
         // get all items registered after edit
         System.out.println("Updated Items:");
-        myShop.getAllItems();
+        myShop.printAllItems();
 
         System.exit(0);
 
