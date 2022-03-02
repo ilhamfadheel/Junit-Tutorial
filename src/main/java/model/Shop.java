@@ -22,10 +22,12 @@ public class Shop {
 
     public String getItems() {
         StringBuilder returnString = new StringBuilder();
-
+        int i = 1;
         for (Item item : this.items) {
             returnString.append(item.getItemInfo());
-            returnString.append("\n");
+            if (i++ != this.items.size()) {
+                returnString.append("\n");
+            }
         }
 
         return returnString.toString();
