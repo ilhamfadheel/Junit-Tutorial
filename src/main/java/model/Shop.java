@@ -2,7 +2,7 @@ package model;
 
 import java.util.List;
 import java.util.ArrayList;
-
+//create class Shop using List
 public class Shop {
     private List<Item> items;
 
